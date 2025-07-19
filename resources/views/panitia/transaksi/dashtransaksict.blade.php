@@ -78,12 +78,12 @@
                     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
-                                <th scope="col" class="px-4 py-4">No</th>
                                 <th scope="col" class="px-4 py-3">NAMA PESERTA</th>
                                 <th scope="col" class="px-4 py-3">VERIFIKASI OLEH</th>
                                 <th scope="col" class="px-4 py-3">BUKTI TRANSAKSI</th>
                                 <th scope="col" class="px-4 py-3">NO. TELPON</th>
                                 <th scope="col" class="px-4 py-3">SESI</th>
+                                <th scope="col" class="px-4 py-3">BANK</th>
                                 <th scope="col" class="px-4 py-3">VALIDASI</th>
                                 <th scope="col" class="px-4 py-3">UPLOAD</th>
                                 <th scope="col" class="px-4 py-3">
@@ -96,7 +96,7 @@
                                 @foreach($transaksi as $data)
                                 <tr
                                     class="border-b dark:border-gray-700 {{($loop->iteration % 2 == 0) ? 'bg-slate-100' : ''}}" id="baris{{$loop->iteration}}">
-                                    <th class="px-4 py-3">{{$loop->iteration}}</th>
+                                    <!-- <th class="px-4 py-3">{{$loop->iteration}}</th> -->
                                     <td class="px-4 py-3">{{$data->nama_peserta}}</td>
                                     @if($data->id_panitia == NULL)
                                         <td class="px-4 py-3 italic">Belum Ada VERIFIKASI</td>
@@ -110,6 +110,7 @@
                                     </td>
                                     <td class="px-4 py-3">{{$data->no_hp}}</td>
                                     <td class="px-4 py-3">{{$data->sesi_peserta}}</td>
+                                    <td class="px-4 py-3">{{$data->bank}}</td>  
                                     <td class="px-4 py-3">
                                         @if($data->validasi === 'Belum Tervalidasi')
                                             <p class="text-yellow-400">

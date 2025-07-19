@@ -64,11 +64,11 @@
                     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
-                                <th scope="col" class="px-4 py-4">No</th>
                                 <th scope="col" class="px-4 py-3">NAMA PESERTA</th>
                                 <th scope="col" class="px-4 py-3">EMAIL PESERTA</th>
                                 <th scope="col" class="px-4 py-3">SESI</th>
                                 <th scope="col" class="px-4 py-3">NO. TELEPON</th>
+                                <th scope="col" class="px-4 py-3">BANK</th>
                                 <th scope="col" class="px-4 py-3">BUKTI TRANSAKSI</th>
                                 <th scope="col" class="px-4 py-3">UPLOAD</th>
                             </tr>
@@ -83,6 +83,7 @@
                                         <td class="px-4 py-3">{{$data->peserta->email}}</td>
                                         <td class="px-4 py-3">{{$data->sesi}}</td>
                                         <td class="px-4 py-3">{{$data->peserta->no_hp}}</td>
+                                        <td class="px-4 py-3">{{$data->bank}}</td>
                                         {{-- <td class="px-4 py-3">
                                             <button onclick ="previewImage('baris{{$loop->iteration}}', '{{$data->id_ct}}')" data-modal-target="imageModal"
                                                     data-modal-toggle="imageModal" id='link-foto'>

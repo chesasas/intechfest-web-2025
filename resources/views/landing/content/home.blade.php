@@ -602,9 +602,9 @@
                 <div class="items-center">
                     <img class="w-[200px] px-2" src="{{asset('images/medpart/logo tcp1p.png')}}" alt=""/>
                 </div>
-                <div class="items-center">
+                <!-- <div class="items-center">
                     <img class="w-[200px] px-2" src="{{asset('images/medpart/logo gdg bali.png')}}" alt=""/>
-                </div>
+                </div> -->
             </div>
         </section>
 

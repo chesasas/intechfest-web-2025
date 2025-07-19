@@ -124,12 +124,13 @@
                 <p class="pb-2 text-justify">Jika tertarik silahkan klik tombol daftar dibawah ini</p>
                 <a href="{{url('/chilltalks-peserta')}}"
                     class="w-full relative btn-slide overflow-hidden bg-primary-lightblue text-white font-bold text-sm uppercase rounded flex items-center justify-center px-2 py-3 mt-4">
-                    <span class="relative z-10">Daftar</span>
+                    <span class="relative z-10">Daftar</span> 
                 </a>
-                <a href="{{url('/gb/download/ct')}}"
+                <!-- <a href="{{url('/gb/download/ct')}}"
                     class="w-full relative btn-slide2 overflow-hidden bg-red-500 text-white font-bold text-sm uppercase rounded flex items-center justify-center px-2 py-3 mt-4">
                     <span class="relative z-10">Download Guidebook</span>
-                </a>
+                </a> -->
+
             </div>
 
         </div>
